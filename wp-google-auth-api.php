@@ -174,7 +174,6 @@ if ( ! class_exists( 'WPGoogleAuth' ) ) {
 		 * @return Object|WP_Error
 		 */
 		private function is_json_valid( $service_account_json ) {
-			$is_valid        = true;
 			$service_account = json_decode( $service_account_json );
 
 			if ( json_last_error() !== JSON_ERROR_NONE
